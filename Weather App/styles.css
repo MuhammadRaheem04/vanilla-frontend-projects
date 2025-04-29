@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: maroon; */
+    background: linear-gradient(to right bottom, #d1a18f, #87f5d0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4.5rem;
+    margin: 2rem; 
+}
+
+.weather-container{
+    color: white;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+
+.time-location{
+    font-size: 2rem;
+}
+
+.condition{
+  margin: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+nav{
+    height: 100px;
+    width: 30%;
+
+}
+
+.search-area{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: gray;
+    background-color: white;
+    font-size: 1.1rem;
+    width: 98%;
+    border-radius: 8px;
+}

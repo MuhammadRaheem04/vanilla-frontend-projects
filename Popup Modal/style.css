@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn{
+    width: 12rem;
+    height: 3rem;
+    border: 2px solid lightcoral;
+    border-radius: 3rem;
+    color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+
+.clickMe{
+    margin-top: 18rem;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: lightcoral;
+    color: white;
+}
+
+.modal{
+    width: 25rem;
+    height: 20rem;
+    background: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    animation: show 0.5s;
+}
+
+@keyframes show{
+    0%,1%{
+        transform: translateY(-99%);
+    }
+    99%,100%{
+        transform: translateY(0%);
+    }
+}
+
+.modalBtn{
+    width: 8rem;
+    height: 2rem;
+}
+
+.active{
+    background: lightcoral;
+}
+
+.active .modal{
+    display: flex;
+}
+
+.active .clickMe{
+    display: none;
+}

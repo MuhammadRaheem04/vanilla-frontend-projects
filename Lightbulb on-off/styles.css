@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+}
+
+.switch-container{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-cover{
+    width: 80px;
+    height: 150px;
+    background-color: grey;
+    box-shadow: 0px 0px 5px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.screw{
+width: 5px;
+height: 5px;
+background-color: darkgrey;
+border-radius: 50%;
+}
+
+.switch{
+width: 50%;
+height: 50%;
+background: linear-gradient(darkgrey, grey);
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 5px solid darkgrey;
+}
+
+.on{
+    background: linear-gradient(grey, darkgrey);
+    border-top: 5px solid darkgrey;
+    border-bottom: 1px solid black;
+}
+
+.bulb-container{
+    height: 100vh;
+    width: 40%;
+}
+
+.vire{
+    height: 200px;
+    width: 10px;
+    background: grey;
+    margin: 0 auto;
+}
+
+.vire-connection{
+    height: 15px;
+    width: 15px;
+    background: dimgrey;
+    margin: 0 auto;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    margin-top: -5px;
+}
+
+.socket-top{
+height: 20px;
+width: 50px;
+background: grey;
+margin: 0 auto;
+border-top-right-radius: 40px;
+border-top-left-radius: 40px;
+margin-top: -5px;
+border-bottom: 1px solid black;
+
+}
+
+.socket-bottom{
+width: 50px;
+height: 30px;
+background: grey;
+margin: 0 auto;
+}
+
+.socket-back{
+    width: 50px;
+    height: 20px;
+    background: grey;
+    margin: 0 auto;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-top: -13px;
+}
+
+.bulb-top{
+width: 45px;
+height: 30px;
+background: lightgrey;
+margin: 0 auto;
+margin-top: -10px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+.bulb-bottom{
+height: 80px;
+width: 80px;
+background: lightgrey;
+margin: 0 auto;
+border-radius: 50%;
+margin-top: -10px;
+}
+
+.bulbOn{
+    background-color: lightyellow;
+    box-shadow: 0px 10px 100px 10px lightyellow;
+}
