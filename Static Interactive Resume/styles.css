@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0f0f0;
+    color: #333; 
+  }
+  
+  .static-resume-container {
+    max-width: 750px;
+    margin: 40px auto;
+    background-color: #fff; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+    
+  }
+  
+  .static-resume-header {
+    background-color: #042743; 
+    padding: 25px;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 5px solid #ff8c00;
+  }
+  
+  .static-resume-header h1 {
+    font-size: 32px; 
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+   
+  }
+  .static-resume-header h2 {
+    border-bottom: 3px solid #ff8c00; 
+   
+    
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #profile-pic {
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+   #myPersonalInfo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff; 
+  }
+  
+   .myContact {
+    font-size: 18px; 
+    margin-top: 5px;
+  }
+  
+  .myContact a {
+    color: #f3ba1c; 
+    text-decoration: none;
+  }
+  
+  .myContact a:hover {
+    text-decoration: underline;
+  }
+  
+  .static-resume-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .static-resume-tabs button {
+    /* background-color: #ff9c00;*/
+    background-color: #24485f;
+    color: #ffffff; 
+    border: 1px solid #ddd; 
+    padding: 12px 20px;
+    margin: 0 5px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px; 
+    transition: background-color 0.3s;
+  }
+  
+  .static-resume-tabs button:hover {
+    background-color: #4b809e; 
+  }
+  
+  .resume-content {
+    padding: 25px; 
+  }
+  
+  h2 {
+    font-size: 24px; 
+    color: #3498db; 
+    margin-bottom: 10px;
+    border-bottom: 3px solid #3498db; 
+    padding-bottom: 5px;
+  }
+
+  .skills-item {
+    font-weight: bold;
+} 
+
+/* Media Query for Smaller Screens (e.g., mobile) */
+@media (max-width: 705px) {
+  .static-resume-container {
+      max-width: 90%; /* Adjust the width as needed */
+  }
+
+  .profile {
+      flex-direction: column; /* Stack profile pic and info vertically */
+      align-items: center;
+  }
+
+  #profile-pic {
+      margin-bottom: 20px;
+  }
+
+  .static-resume-tabs {
+      flex-direction: column; /* Stack tabs vertically */
+  }
+
+  .static-resume-tabs button {
+      margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .myContact {
+    font-size: 14px; 
+    
+  }
+  #myPersonalInfo h2 {
+    font-size: 18px;
+    font-weight: 500px;
+  }
+  .static-resume-header h1 {
+    font-size: 22px; 
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 500px) {
+
+  .myContact {
+    font-size: 10px; 
+    
+  }
+  #myPersonalInfo h2 {
+    font-size: 15px;
+    font-weight: 500px;
+  }
+  .static-resume-header h1 {
+    font-size: 20px; 
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 370px) {
+
+  .myContact {
+    font-size: 9px; 
+    
+  }
+  #myPersonalInfo h2 {
+    font-size: 15px;
+    font-weight: 500px;
+  }
+  .static-resume-header h1 {
+    font-size: 20px; 
+    font-weight: 700;
+  }
+  
+}

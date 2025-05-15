@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Website Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header  -->
+    <div class='bg-white z-50 sticky top-0 shadow-md'>
+        <header class="text-gray-600 body-font flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- logo  -->
+                <div class="p-2">
+                    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                      <img src="/assets/logo.jpg" alt='logo' width={100} height={100}
+                      class='w-48'>
+                    </a>
+                </div>
+                <!-- nav links and buttons  -->
+                <div class="flex flex-wrap items-center justify-center md:justify-between w-full md:w-auto">
+                    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                        <a href="#about" class="font-medium mr-5 hover:text-blue-600" >About</a>
+                        <a href="#services" class="font-medium mr-5 hover:text-blue-600" >Services</a>
+                        <a href="/" class="font-medium mr-5 hover:text-blue-600" >Media</a>
+                        <a href="#contact" class="font-medium mr-5 hover:text-blue-600" >Contact Us</a>
+                        <a href="#contact" class="font-medium mr-5 hover:text-blue-600" >Bank Details</a>
+                    </nav>
+                    <!-- buttons  -->
+                    <div>
+                        <button class="inline-flex items-center bg-blue-600 border-0 py-1 px-3 font-normal focus:outline-none mx-2 rounded 
+                        text-white mt-4 md:mt-0 cursor-pointer">
+                             Other Donations 
+                        </button>
+                        <button class="inline-flex items-center bg-blue-600 border-0 py-1 px-3 font-normal focus:outline-none hover:bg-green-400 rounded 
+                        text-white mt-4 md:mt-0 cursor-pointer">
+                             Donate Now
+                        </button>
+                    </div>
+
+                    </a>
+                </div>
+        </header>
+    </div>
+
+    <!-- hero section  -->
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <!-- left side text  -->
+          <div class="text-center w-[60%] md:text-left">
+            <!-- heading  -->
+           <h1 class="text-4xl font-bold">
+            <span class="relative inline-block">
+             <span class="absolute inset-0 bg-blue-100 rounded-full w-12 h-12 -left-6 -top-2">
+             </span>
+             <span class="relative">
+              Welcome to the
+             </span>
+            </span>
+            <span class="text-green-500">
+             Saylani
+            </span>
+            Welfare
+            <br>
+            Non Governmental Organization in Pakistan
+           </h1>
+            <!-- paragraph  -->
+           <p class="text-xl font-bold mt-4">
+            The largest NGO offering free
+            <span id="typewriter" class="text-blue-500"></span>
+           </p>
+           <script>
+            const phrases = [
+                "Assistance to disaster affectees",
+                "monthly family support",
+                "clean water",
+                "healthcare and lot more.",
+                "Education",
+                "IT and vocational training",
+            ];
+            const typewriterElement = document.getElementById("typewriter");
+            let phraseIndex = 0;
+            let charIndex = 0;
+    
+            function typeWriter() {
+                if (charIndex < phrases[phraseIndex].length) {
+                    typewriterElement.innerHTML += phrases[phraseIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 100); // Adjust the speed here (in milliseconds)
+                } else {
+                    // Wait for a moment before starting to erase
+                    setTimeout(() => {
+                        eraseWriter();
+                    }, 1000); // Adjust the pause duration before erasing
+                }
+            }
+    
+            function eraseWriter() {
+                if (charIndex > 0) {
+                    typewriterElement.innerHTML = phrases[phraseIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(eraseWriter, 50); // Adjust the speed of erasing
+                } else {
+                    // Move to the next phrase
+                    phraseIndex = (phraseIndex + 1) % phrases.length; // Loop back to the first phrase
+                    setTimeout(() => {
+                        typeWriter(); // Start typing the next phrase
+                    }, 500); // Adjust the pause duration before typing the next phrase
+                }
+            }
+    
+            // Start the typewriter effect
+            typeWriter();
+        </script>
+           <p class="mt-4 text-gray-600">
+            Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.
+           </p>
+           <button class="mt-6 px-6 py-2 border border-gray-400 text-gray-700 hover:bg-gray-100">
+            Explorer More
+            <i class="fas fa-arrow-right ml-2">
+            </i>
+           </button>
+          </div>
+          <!-- right side image  -->
+          <div class="mt-12 flex justify-center space-x-4 w-[40%]">
+           <div class="relative w-32 h-32 flex flex-col items-center justify-center mx-2 my-2">
+               <div class="relative w-32 h-32 my-4">
+                <img alt="People distributing aid" class="rounded-full" height="128" src="https://storage.googleapis.com/a1aa/image/dqABgmhL0bOjU8XvHFog7oioduzL9P_k_8W8mWBoRYY.jpg" width="128"/>
+               </div>
+               <div class="relative w-48 h-48">
+                <img alt="People cooking food in large pots" class="rounded-full" height="192" src="https://storage.googleapis.com/a1aa/image/U_UKejQy-brVApkohDdNPNliACJ_EomqKNYRpKBQSpc.jpg" width="192"/>
+               </div>
+           </div>
+
+           <div class="relative w-32 h-32 flex flex-col items-center justify-center  mx-2 my-2">
+               <div class="relative w-40 h-40 my-4">
+                <img alt="Volunteer helping children" class="rounded-full" height="160" src="https://storage.googleapis.com/a1aa/image/5-JvNIN-aOHyARzcsYCZl_oZ5SvWHTEQ_nj6iufkInU.jpg" width="160"/>
+               </div>
+               <div class="relative w-24 h-24">
+                <img alt="People eating food" class="rounded-full" height="96" src="https://storage.googleapis.com/a1aa/image/aHlfjaCi8Qfz4a9EaOe-3tNNSQbGKHAj6Xa5zIK1IZY.jpg" width="96"/>
+               </div>
+           </div>
+
+          </div>
+
+          </div>
+
+          <!-- middle header  -->
+                <div class="bg-green-100 p-4 rounded-lg flex flex-wrap justify-evenly items-center space-x-2 h-24">
+                    <div class="flex items-center bg-gray-800 text-white rounded-lg overflow-hidden">
+                        <span class="px-4 py-2">General</span>
+                        <input type="text" value="0" class="w-16 text-center text-black" />
+                        <span class="px-4 py-2">Rs.</span>
+                    </div>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg hover:bg-black hover:text-white">Gazzah Support</button>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg hover:bg-black hover:text-white">Daily Food</button>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg hover:bg-black hover:text-white">Medical</button>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg hover:bg-black hover:text-white">Family Kifalat</button>
+                    <button class="bg-white text-black px-4 py-2 rounded-lg hover:bg-black hover:text-white">Education</button>
+                    <button class="bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500">Quick Donate</button>
+                </div>
+          <!-- cards section  -->
+           <div class = "my-8 flex items-center justify-center">
+    <div class="relative w-[90%]">
+        <img id="slide" src="image1.jpg" alt="Slideshow Image" class="w-full rounded-lg">
+        <button class="absolute bottom-8 right-4 transform -translate-y-1/2  p-2 shadow-lg bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500 mt-4 md:mt-0 cursor-pointer">
+            Donate Now
+    </div>
+
+    <script>
+        const images = [
+            '/assets/card1.jpg',
+            '/assets/card2.jpg',
+            '/assets/card3.jpg'
+        ];
+        let currentIndex = 0;
+
+        const slide = document.getElementById('slide');
+
+        function updateImage() {
+            slide.src = images[currentIndex];
+        }
+
+        // Optional: Auto change images every 5 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        }, 5000);
+    </script>
+           </div>
+        
+           <!-- Our Services  -->
+ <div class="bg-white text-gray-800 mb-[50px]">
+  <div class="container mx-auto py-12">
+   <h1 class="text-center text-2xl font-bold mb-8">
+    What We Are Doing
+   </h1>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Hands holding a heart icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/kqFZ68wFlCHZDaZuDqEXADKSuISwrvcris8VdVjOsvk.jpg" width="64"/>
+     <p class="font-semibold">
+      Welfare
+     </p>
+    </div>
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Stethoscope icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/1Hrk8f3QHUqe6SlSyzwmGkjv60j1LuwhbeAtkVyrJ8U.jpg" width="64"/>
+     <p class="font-semibold">
+      Medical
+     </p>
+    </div>
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Mobile phone with heart icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/wm9jPQCT3ThKoI3IvMP5yRyxC0gxejR4ZTuGtQqsHNU.jpg" width="64"/>
+     <p class="font-semibold">
+      Online Sadaqah
+     </p>
+    </div>
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Water tap icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/cuGKk9hJFHl3-s-iI8yemqh0LVVCyXeXLFjeA5TxEKY.jpg" width="64"/>
+     <p class="font-semibold">
+      Clean Water
+     </p>
+    </div>
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Graduation cap icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/9EiZtAS4skE11AbVgosbkk6dzAKQz8uuS-jqmHU-3pI.jpg" width="64"/>
+     <p class="font-semibold">
+      Education
+     </p>
+    </div>
+    <div class="bg-green-100 p-6 text-center rounded-lg">
+     <img alt="Plate with fork and knife icon" class="mx-auto mb-4" height="64" src="https://storage.googleapis.com/a1aa/image/pWXVrXiaq3FRrQuF7nJ6dQry8KGEn91v91UxSvV0jtM.jpg" width="64"/>
+     <p class="font-semibold">
+      Food
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="flex space-x-8 ml-8">
+     <div class="relative">
+         <img src="/assets/rashon1.jpeg" alt="Rashon" width="400px" height="400px">
+         <button class="absolute bottom-4 w-full transform -translate-y-1/2  p-2 shadow-lg bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500 mt-4 md:mt-0 cursor-pointer">
+             Donate Now
+     </button>
+     </div>
+     <div class="relative">
+         <img src="/assets/rashon3.jpeg" alt="Rashon" width="350px" height="300px">
+         <button class="absolute bottom-4 w-full transform -translate-y-1/2  p-2 shadow-lg bg-green-400 text-white px-4 py-2 rounded-lg hover:bg-green-500 mt-4 md:mt-0 cursor-pointer">
+             Donate Now
+     </button>
+  </div>
+ </div>
+</div>
+          <!-- footer  -->
+             <footer class="pt-10 bg-gray-800 text-white">
+              <div class="container mx-auto px-4">
+               <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- logo  -->
+                <div class="mb-6 md:mb-0">
+                 <img alt="Saylani Welfare Trust Logo" class="mb-4" height="100" src="/assets/logo_saylaniwelfare.png" width="200"/>
+                 <div class="flex space-x-4">
+                  <a class="text-blue-600" href="#">
+                   <i class="fab fa-facebook-f">
+                   </i>
+                  </a>
+                  <a class="text-red-600" href="#">
+                   <i class="fab fa-youtube">
+                   </i>
+                  </a>
+                  <a class="text-black" href="#">
+                   <i class="fab fa-xing">
+                   </i>
+                  </a>
+                  <a class="text-green-600" href="#">
+                   <i class="fab fa-whatsapp">
+                   </i>
+                  </a>
+                 </div>
+                 <div class="mt-4 flex space-x-2 ml-8">
+                  <img src="/assets/facebook.png" alt="facebook" width="30" height="30" class="rounded-full">
+                  <img src="/assets/twitter.avif" alt="X" width="30" height="30" class="rounded-full">
+                  <img src="/assets/youtube.webp" alt="YouTube" width="30" height="30" class="rounded-full">
+                  <img src="/assets/whatsapp.jpg" alt="WhatsApp" width="30" height="30" class="rounded-full">
+                 </div>
+                </div>
+                <!-- links  -->
+                <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12">
+                 <div class="space-y-2">
+                  <h3 class="font-bold mb-2">
+                   About
+                  </h3>
+                  <ul  class="space-y-2">
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Introduction
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Chairman Message
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Annual Report
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Bank Details
+                    </a>
+                   </li>
+                  </ul>
+                 </div>
+
+                 <div>
+                  <h3 class="font-bold mb-2">
+                   Explore
+                  </h3>
+                  <ul  class="space-y-2">
+                   <li>
+                    <a class="hover:underline" href="#">
+                     News
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Media
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Contact
+                    </a>
+                   </li>
+                   <li>
+                    <a class="hover:underline" href="#">
+                     Donations
+                    </a>
+                   </li>
+                  </ul>
+                 </div>
+
+                 <div>
+                  <h3 class="font-bold mb-2">
+                   Contact
+                  </h3>
+                  <address class="not-italic ">
+                   A-25, Bahadurabad Chowrangi Karachi, Pakistan
+                   <br/>
+                   UAN: 111-729-526 (+0092-213)4130786-90
+                   <br/>
+                   CELL: 92-311-1729526
+                   <br/>
+                   USA NO +1(716)941 7792
+                   <br/>
+                   UK NO (+44)115 970 6256
+                   <br/>
+                   <a class="hover:underline" href="#">
+                    For Istikhara Contact
+                   </a>
+                  </address>
+                 </div>
+                </div>
+               </div>
+
+               <div class="flex flex-col md:flex-row justify-center items-center mt-10">
+                <div class="flex flex-col items-center space-x-4">
+                 <img alt="ACCA Approved Employer Logo" class="w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/yYNMRbJBmc3GuccEO1-KDPUOv08DYE_4LUfbw_PkZVo.jpg" width="100"/>
+                 <span>
+                  Trainee Development - Gold
+                 </span>
+                </div>
+                <div class="flex flex-col items-center space-x-4 mt-4 md:mt-0">
+                 <img alt="UBL Pay Logo" class="w-16 h-16" height="50" src="/assets/ubl.webp" width="100"/>
+                 <span>
+                  Our payment partner
+                 </span>
+                </div>
+               </div>
+               <div class="text-center mt-10">
+                <p class="border-t border-white pt-5 border-b border-white">
+                 IP address data powered by IPinfo
+                </p>
+                <p class="mt-6">
+                 Copyright © 2025 by Saylani Welfare Int Trust
+                </p>
+               </div>
+              </div>
+             </footer>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+               intent="WELCOME"
+               chat-title="Saylani-Website-Agents"
+               agent-id="aa318b8b-e3bd-48b4-9252-f95d20b21409"
+               language-code="en"
+             ></df-messenger>     
+
+             <style>
+                df-messenger {
+                  --df-messenger-bot-message: #ffcc00; /* Bot message color */
+                  --df-messenger-user-message: #0077b6; /* User message color */
+                  --df-messenger-send-message-button-color: #ff9900; /* Send button color */
+                  --df-messenger-title: "Saylani Welfare Chat";
+                  --df-messenger-chat-background-color: #f1f1f1;
+                  --df-messenger-button-background-color: #4CAF50; /* Green button */
+                }
+              </style>
+       
+</body>
+</html>

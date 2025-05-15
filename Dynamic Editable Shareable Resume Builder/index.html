@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+   
+</head>
+<body>
+    <div>
+    <div class="resume-container">
+        <h2>Shareable Resume Builder by Muhammad Raheem</h2>
+        <form id="resume-form">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="personal-Info-section">
+                
+                <label for="user-name">Your URL </label>
+                <input type="text" id="user-name" name="user-name" required>
+
+                <label for="my-name">Name </label>
+                <input type="text" id="my-name" name="my-name" required>
+
+                <label for="my-phone">Phone </label>
+                <input type="tel" id="my-phone" name="my-phone" required>
+
+                <label for="my-email">Email </label>
+                <input type="email" id="my-email" name="my-email" required>
+            </div>
+            </fieldset>
+       
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <div id="my-education-section">
+                <label for="my-degree">Degree</label>
+                <input type="text" id="my-degree" name="my-degree">
+
+                <label for="my-institution">Institution</label>
+                <input type="text" id="my-institution" name="my-institution">
+
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" name="end-date">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+
+            <div id="my-esperience-section">
+                <label for="my-position">Position</label>
+                <input type="text" id="my-position" name="my-position">
+
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+
+                <label for="startDate">Start Date</label>
+                <input type="date"id="startDate" name="startDate">
+
+                <label for="endDate">End Date</label>
+                <input type="date"id="endDate" name="endDate">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <div class="my-skills">
+                <label for="skills">Skills</label>
+               <textarea name="my-skills" id="my-skills" rows="4" required></textarea>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Profile Image</legend>
+            <div class="profile-picture">
+              <label for="profile-picture">Add Profile Image</label>
+              <input
+                type="file"
+                id="profile-picture"
+                name="profile-picture"
+                accept="Image/*"
+              />
+            </div>
+          </fieldset>
+
+        <button type="submit" class="generate-button">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume-preview"></div>
+     
+    <div class="buttons">
+        <button id="editBtn" class="edit">Edit Resume</button>
+        <button id="downloadPdfBtn" class="download-pdf">Download PDF</button>
+        <button id="copyLinkBtn" class="copy-link">Copy Share Link</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
