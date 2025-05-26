@@ -6,7 +6,9 @@ A curated collection of 20+ frontend mini-projects built using **HTML**, **CSS**
 
 ## 📁 Projects Overview
 
-Each project is housed in its own directory, containing all necessary files (`index.html`, `style.css`, `script.js`, etc.). Below is a list of the projects included:
+Each project is housed in its own directory, containing all necessary files (`index.html`, `style.css`, `script.js`, etc.).
+
+### ✅ List of Projects
 
 1. **Analog Clock 01** – A classic analog clock displaying current time.
 2. **Analog Clock** – Another variation of an analog clock with different styling.
@@ -25,8 +27,11 @@ Each project is housed in its own directory, containing all necessary files (`in
 15. **Virtual Keyboard** – On-screen keyboard simulation.
 16. **Weather App** – Displays weather information based on user input.
 17. **Calculator** – Basic arithmetic calculator.
-
-> *Note: More projects will be added soon to reach and surpass the 20-project goal.*
+18. **Static Interactive Resume** – A single-page interactive resume built with HTML5 and CSS3, showcasing personal details, skills, and layout design.
+19. **Saylani Web Clone** – A replica of the Saylani Welfare Trust website layout using HTML5 and CSS3. Focused on accurate structure and responsiveness.
+20. **Snake Game** – Classic snake game implemented with JavaScript logic and responsive design.
+21. **Tetris Game** – A fully playable Tetris game created using vanilla JavaScript, with scoring and block logic.
+22. **Dynamic Editable Shareable Resume Builder** – A dynamic web app allowing users to input, preview, edit, and share their resumes. Built using vanilla JavaScript, HTML5, and CSS3.
 
 ---
 
@@ -42,17 +47,17 @@ This repository is designed to:
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – Markup language for structuring content.
-- **CSS3** – Styling and layout techniques.
-- **JavaScript (ES6+)** – Interactive functionalities and logic.
-- **APIs** – Integrated in projects like the Dictionary Application and Random MEME Generator.
+- **HTML5** – Markup language for structuring web content.
+- **CSS3** – Styling and layout techniques for responsive designs.
+- **JavaScript (ES6+)** – Adds dynamic and interactive functionality to web apps.
+- **APIs** – Used in projects like Dictionary App and Meme Generator.
 
 ---
 
 ## 🚀 Getting Started
 
-To explore any project:
+To explore any project locally:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MuhammadRaheem04/vanilla-frontend-projects.git
+```bash
+git clone https://github.com/MuhammadRaheem04/vanilla-frontend-projects.git
+cd vanilla-frontend-projects
